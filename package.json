@@ -10,6 +10,7 @@
     "build": "nuxt-ts build",
     "build:analyze": "nuxt-ts build --analyze",
     "start": "nuxt-ts start",
+    "start:backend": "cd backend; poetry run serve",
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ./src ./test ./stories",
     "lint:fix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ./src ./test ./stories --fix",

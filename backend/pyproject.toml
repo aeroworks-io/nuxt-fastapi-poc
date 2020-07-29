@@ -4,6 +4,12 @@ version = "0.1.0"
 description = "backend for nuxt-fastapi-poc"
 authors = ["Yuichiro Smith <contact@yu-smith.com>"]
 license = "MIT"
+packages = [
+    { include="scripts", from="." }
+]
+
+[tool.poetry.scripts]
+serve = "scripts.server:run"
 
 [tool.poetry.dependencies]
 python = "^3.8"
