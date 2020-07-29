@@ -30,16 +30,9 @@
     ],
     "experimentalDecorators": true
   },
-  "files": [
-    "shims-vue.d.ts"
-  ],
   "include": [
-    "src/**/*.ts",
-    "src/**/*.vue",
-    "test/**/*.ts",
-    "test/**/*.vue",
-    "stories/**/*.ts",
-    "stories/**/*.vue"
+    "shims-vue.d.ts",
+    "src/plugins"
   ],
   "exclude": [
     "node_modules"
