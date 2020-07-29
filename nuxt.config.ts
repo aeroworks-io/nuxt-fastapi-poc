@@ -36,11 +36,13 @@ export default {
   plugins: [
     '@/plugins/firebase/index',
     '@/plugins/firebase/vuefire',
+    '@/plugins/api',
   ],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/dotenv',
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
@@ -57,6 +59,9 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
+  dotenv: {
+    path: './'
+  },
   axios: {},
   /*
    ** vuetify module configuration
