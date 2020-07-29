@@ -2,8 +2,29 @@ import { Configuration } from '@nuxt/types'
 
 import colors from 'vuetify/es5/util/colors'
 
+const envKeys = [
+  'BACKEND_URL',
+  'FIREBASE_API_KEY',
+  'FIREBASE_AUTH_DOMAIN',
+  'FIREBASE_DATABASE_URL',
+  'FIREBASE_PROJECT_ID',
+  'FIREBASE_STORAGE_BUCKET',
+  'FIREBASE_MESSAGING_SENDER_ID',
+  'FIREBASE_APP_ID'
+] as const
+
+type Unpacked<T> = T extends { [K in keyof T]: infer U } ? U : never
+
+type Environment = { [K in Unpacked<typeof envKeys>]: string }
+const filterEnv: (obj: any) => Environment = (obj) => {
+  return Object.fromEntries(envKeys.flatMap(key => obj[key] != null ? [[key, obj[key]]] : [])) as Environment
+}
+
+console.log(filterEnv(process.env))
+
 export default {
   mode: 'universal',
+  env: filterEnv(process.env),
   srcDir: 'src',
   /*
    ** Headers of the page
