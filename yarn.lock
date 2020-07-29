@@ -1978,6 +1978,11 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@openapitools/openapi-generator-cli@^1.0.15-5.0.0-beta":
+  version "1.0.15-5.0.0-beta"
+  resolved "https://registry.yarnpkg.com/@openapitools/openapi-generator-cli/-/openapi-generator-cli-1.0.15-5.0.0-beta.tgz#01b4805308d10762655158f446ebc54032ca33cc"
+  integrity sha512-4Sbl/o2XbArryKnvsAtrK4UwXe0nTGnHErkYlMuIZYWBIZdEq8EeHHHHcVLlH1K3LZVP+uu18If51DcLtqVW4A==
+
 "@posva/vuefire-core@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@posva/vuefire-core/-/vuefire-core-2.3.2.tgz#54f7c2f2e257a1cc782e88e00ac4b19d82af0cac"

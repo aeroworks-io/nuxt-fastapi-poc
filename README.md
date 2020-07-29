@@ -1,16 +1,12 @@
-# nuxt-vercel-template
+# Nuxt-fastapi-poc
 
-Nuxt TypeScript (Class Component) Vuetify Project that supports hosting on Vercel
+Nuxt.js powered by FastAPI(with OpenAPI generator) as the backend server 
 
 ## includes:
 * jest
 * storybook
 * eslint
 * prettier
-
-## nuxt plugins
-* @nuxt/axios
-* 
 
 ## Build Setup
 
@@ -30,3 +26,13 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## OpenAPI Demo
+
+```
+yarn start:backend
+yarn generate:openapi
+```
+
+Above will output endpoints of the Backend server as a method.
+See [src/pages/inspire.vue](./src/pages/inspire.vue) for invocation. 
