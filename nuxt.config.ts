@@ -20,8 +20,6 @@ const filterEnv: (obj: any) => Environment = (obj) => {
   return Object.fromEntries(envKeys.flatMap(key => obj[key] != null ? [[key, obj[key]]] : [])) as Environment
 }
 
-console.log(filterEnv(process.env))
-
 export default {
   mode: 'universal',
   env: filterEnv(process.env),
